@@ -1,20 +1,17 @@
 # Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments
-Implementation code for our paper ["M-Calib: A Monocular 3D Object Localization using 2D Estimates for Industrial Robot Vision System"](https://assets.researchsquare.com/files/rs-4019542/v1_covered_5a75ac68-1bc8-4bdd-b2c5-8bbdb1eac8f1.pdf?c=1711473654)
+Implementation code for our paper ["Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments"](https://)
 
-Thanh Nguyen Canh, Du Trinh Ngoc, Xiem HoangVan, "**Monocular 3D Object Localization using 2D Estimates for Industrial Robot Vision System**," *Journal of Automation, Mobile Robotics and Intelligent Systems*, 2024. [[**Journal of Automation, Mobile Robotics and Intelligent Systems**](https://doi.org/)] [[Citation](#citation)]
+Thanh Nguyen Canh, Xiem HoangVan, Nak Young Chong"**Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments**, 2024. [[**IEEE Explore**](https://doi.org/)] [[Citation](#citation)]
 
 ## Citation
 ```
-@article{Canh2024,
-  title = {Monocular 3D Object Localization using 2D Estimates for Industrial Robot Vision System},
-  ISSN = {},
-  url = {},
+@INPROCEEDINGS{Canh2024Enhancing,
+  title = {The International Conference on Control, Automation, and Systems (ICCAS)},
   DOI = {},
-  journal = {Journal of Automation, Mobile Robotics and Intelligent Systems},
-  publisher = {Industrial Research Institute for Automation and Measurements PIAP, Poland},
-  author = {Thanh, Nguyen Canh and Du, Trinh Ngoc and Xiem HoangVan},
+  booktitle = {Journal of Automation, Mobile Robotics and Intelligent Systems},
+  publisher = {IEEE},
+  author = {Thanh, Nguyen Canh and Xiem, HoangVan and NakYoung, Chong},
   year = {2024},
-  month = jul,
   pages = {}
 }
 ```
@@ -23,9 +20,8 @@ Thanh Nguyen Canh, Du Trinh Ngoc, Xiem HoangVan, "**Monocular 3D Object Localiza
 <img src="https://github.com/thanhnguyencanh/SGan-TEB/blob/main/docs/overview.png" width="750px">
  
 ## Requirements
-* python 3.7
-* torch 1.7.1
-* tensorboard
+* ubuntu 20.04
+* ROS Noetic
 
 ## M-Calib Datasets
 There are two different datasets collected by the authors
@@ -35,38 +31,17 @@ The related datasets can be found at:
 * 1. Object Detection dataset: (https://app.roboflow.com/uet-jvl1l/m-calib/1).
 * 2. Object Segmentation dataset: (https://app.roboflow.com/uet-jvl1l/mcalibsegment/1).
 
-## Usage: M-Calib (the inference)
+## Usage:
 
 * 1. Step 1: Clone this repo
 ```
-git clone https://github.com/thanhnguyencanh/MonoCalibNet
-cd MonoCalibNet
+git clone https://github.com/thanhnguyencanh/SGan-TEB
+
+catkin build
+cd SGan-TEB
 ```
-* 2. Step 2: Creating a model
-
-Option 1: 
-+ Use a pre-trained model: [model](https://drive.google.com/drive/folders/1MS6DLxgKxo-FtC7TSTJN8WJCxhu8W3Fe?usp=sharing)
-
-+ Modify path in [cfg.py](https://github.com/thanhnguyencanh/MonoCalibNet/blob/main/cfg.py)
-
-Option 2: 
-+ Training new model using [Object_Detection](https://github.com/thanhnguyencanh/MonoCalibNet/blob/main/Object_Detection.ipynb) and [Instance_Segmentation](https://github.com/thanhnguyencanh/MonoCalibNet/blob/main/Instance_Segmentation.ipynb) 
-
-+ Convert to Onnx model
-
-* 3. Step 3: Testing
-
-```
-mkdir model
-mkdir dataset
-```
- + Set pat in cfg.py
-```
-python3 run_chessboard_yolov5.py
-```
-
-
-Creating a map with gmapping:
+* 2. Step 2: Creating a map with mapping algorithm:
+ 
 ```
 export TURTLEBOT3_MODEL=waffle
 
@@ -76,7 +51,10 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 rosrun map_server map_saver -f $(rospack find turtlebot3_navigation)/turtlebot3_house.yaml
 ```
-System startup:
+
+* 3. Step 3: System startup:
+
+
 ```
 #Using Turtlebot 3 Waffle
 export TURTLEBOT3_MODEL=waffle
