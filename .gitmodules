@@ -4,3 +4,6 @@
 [submodule "turtlebot3_simulations"]
 	path = turtlebot3_simulations
 	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations
+[submodule "darknet_ros"]
+	path = darknet_ros
+	url = https://github.com/leggedrobotics/darknet_ros
