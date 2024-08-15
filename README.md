@@ -20,7 +20,7 @@ Thanh Nguyen Canh, Du Trinh Ngoc, Xiem HoangVan, "**Monocular 3D Object Localiza
 ```
 
 ## Our proposed:
-<img src="https://github.com/thanhnguyencanh/MonoCalibNet/blob/main/image/Overview.png" width="750px">
+<img src="https://github.com/thanhnguyencanh/SGan-TEB/blob/main/docs/overview.png" width="750px">
  
 ## Requirements
 * python 3.7
