@@ -23,13 +23,6 @@ Thanh Nguyen Canh, Xiem HoangVan, Nak Young Chong"**Enhancing Social Robot Navig
 * ubuntu 20.04
 * ROS Noetic
 
-## M-Calib Datasets
-There are two different datasets collected by the authors
-
-The related datasets can be found at:
-
-* 1. Object Detection dataset: (https://app.roboflow.com/uet-jvl1l/m-calib/1).
-* 2. Object Segmentation dataset: (https://app.roboflow.com/uet-jvl1l/mcalibsegment/1).
 
 ## Usage:
 
