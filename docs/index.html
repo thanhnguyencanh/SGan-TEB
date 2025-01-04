@@ -152,7 +152,7 @@ code {
 
          <td align=center width=150px>
          <center>
-         <span style="font-size:20px"> Van-Truong Nguyen </span>
+         <span style="font-size:20px"> Huy-Hoang Ngo </span>
          </center>
          </td>
 
@@ -161,11 +161,7 @@ code {
          <span style="font-size:20px"><a href="https://sites.google.com/site/xiemhoang/home?authuser=0">Xiem HoangVan</a></span>
          </center>
          </td>
-        <td align=center width=150px>
-        <center>
-        <span style="font-size:20px"><a href="https://aelibol.github.io/">Armagan Elibol</a></span>
-        </center>
-        </td>
+
         <td align=center width=150px>
           <center>
           <span style="font-size:20px"><a href="https://www.jaist.ac.jp/robot/">Nak Young Chong</a></span>
@@ -178,7 +174,7 @@ code {
        <tr>
         <td align=center width=100px>
         <center>
-        <span style="font-size:20px">School of Information Science, JAIST, Japan <br> VNU University of Engineering and Technology, Vietnam <br/><a href="https://sice-si.org/SII2024/">SII</a>, 2024.</span>
+        <span style="font-size:20px">School of Information Science, JAIST, Japan <br> VNU University of Engineering and Technology, Vietnam <br/><a href="https://2024.iccas.org//">ICCAS</a>, 2024.</span>
         </center>
         </td>
      </tr>
@@ -190,12 +186,7 @@ code {
      <tr>
        <td align=center width=100px>
        <center>
-       <span style="font-size:20px"><a href="https://arxiv.org/pdf/2401.08134">[Paper]</a></span>
-       </center>
-       </td>
-       <td align=center width=100px>
-       <center>
-       <span style="font-size:20px"><a href="https://github.com/thanhnguyencanh/S3M_SLAM">[Code]</a></span>
+       <span style="font-size:20px"><a href="https://arxiv.org/abs/2411.01816">[Paper]</a></span>
        </center>
        </td>
     
@@ -206,7 +197,7 @@ code {
             
 
             <br>
-            This paper presents a novel approach to address challenges in semantic information extraction and utilization within UAV operations. Our system integrates state-of-the-art visual SLAM to estimate a comprehensive 6-DoF pose and advanced object segmentation methods at the back end. To improve the computational and storage efficiency of the framework, we adopt a streamlined voxel-based 3D map representation - OctoMap to build a working system. Furthermore, the fusion algorithm is incorporated to obtain the semantic information of each frame from the front-end SLAM task, and the corresponding point. By leveraging semantic information, our framework enhances the UAV's ability to perceive and navigate through indoor spaces, addressing challenges in pose estimation accuracy and uncertainty reduction. Through Gazebo simulations, we validate the efficacy of our proposed system and successfully embed our approach into a Jetson Xavier AGX unit for real-world applications.
+            Localization is one of the most crucial tasks for Unmanned Aerial Vehicle systems (UAVs) directly impacting overall performance, which can be achieved with various sensors and applied to numerous tasks related to search and rescue operations, object tracking, construction, etc. However, due to the negative effects of challenging environments, UAVs may lose signals for localization. In this paper, we present an effective path-planning system leveraging semantic segmentation information to navigate around texture-less and problematic areas like lakes, oceans, and high-rise buildings using a monocular camera. We introduce a real-time semantic segmentation architecture and a novel keyframe decision pipeline to optimize image inputs based on pixel distribution, reducing processing time. A hierarchical planner based on the Dynamic Window Approach (DWA) algorithm, integrated with a cost map, is designed to facilitate efficient path planning. The system is implemented in a photo-realistic simulation environment using Unity, aligning with segmentation model parameters. Comprehensive qualitative and quantitative evaluations validate the effectiveness of our approach, showing significant improvements in the reliability and efficiency of UAV localization in challenging environments.
             <br><br>
 
       <hr>
@@ -217,11 +208,11 @@ code {
                     <!--<td width=300px align=left>-->
                     <!-- <a href="http://arxiv.org/pdf/1603.08511.pdf"> -->
                   <!-- <td><a href="#"><img class="layered-paper-big" style="height:175px" src="./resources/images/paper.png"/></a></td> -->
-                  <td><a href="https://arxiv.org/pdf/2401.08134"><img style="height:400px" src="docs/images/thumbnails1.png"/></a></td>
-                  <td><span style="font-size:14pt">Thanh Nguyen Canh, Van-Truong Nguyen, Xiem HoangVan, Armagan Elibol, Nak Young Chong<br><br>
+                  <td><a href="https://arxiv.org/abs/2411.01816"><img style="height:300px" src="docs/images/thumbnails.png"/></a></td>
+                  <td><span style="font-size:14pt">Thanh Nguyen Canh, Huy-Hoang Ngo, Xiem HoangVan, Nak Young Chong<br><br>
                     Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments<br><br>
-                  SII 2024.<br><br>
-                      <a href="https://arxiv.org/abs/2401.08134">[pdf]</a> &nbsp; &nbsp;
+                  ICCAS 2024.<br><br>
+                      <a href="https://arxiv.org/abs/2411.01816">[pdf]</a> &nbsp; &nbsp;
                    <!--    <a href="./resources/bibtex.txt">[Bibtex]</a> -->
                   <!-- [hosted on <a href="#">arXiv</a>]</a> -->
                     </td>
@@ -252,8 +243,8 @@ code {
                     <tr>
                         <td width=600px>
                           <center>
-                            <video  width="900" muted autoplay loop>
-                              <source src="docs/mp4/sim.mp4" type="video/mp4">
+                            <video  width="600" muted autoplay loop>
+                              <source src="docs/mp4/RGB Image.mp4" type="video/mp4">
                               Your browser does not support the video tag.
                               </video>
                         </center>
@@ -281,13 +272,13 @@ code {
                 <tr>
                     <td width=900px>
                       <center>
-                          <a href="docs/images/ProposedSystem.png"><img src = "docs/images/ProposedSystem.png" width="900px"></img></href></a><br>
+                          <a href="docs/images/overview.png"><img src = "docs/images/overview.png" width="900px"></img></href></a><br>
                     </center>
                     </td>
                 </tr>
                     <td width=900px>
                       <center>
-                          <span style="font-size:18px"><i> Proposed S3M SLAM Architecture: The system is composed of three units: a full 6 DoF pose estimation of the drone, a 3D semantic segmentation branch, and a semantic fusion scheme.</i>
+                          <span style="font-size:18px"><i> Overall architecture of our proposed system: The system is composed of three main units: Key Frame Decision Module, Semantic Segmentation Module, and Integration for Semantic Information and Path Planning.</i>
                     </center>
                     </td>
                 </tr>
@@ -297,50 +288,10 @@ code {
                 <tr>
                     <td width=600px>
                       <center>
-                          <a href="docs/images/poseEst.png"><img src = "docs/images/poseEst.png" width="800px"></img></href></a><br>
+                          <a href="docs/images/attention.png"><img src = "docs/images/attention.png" width="500px"></img></href></a><br>
                     </center>
                     </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i>3D Pose Estimation.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-                <br><br>
-                    <table align=center width=600px>
-                <tr>
-                    <td width=900px>
-                      <center>
-                          <a href="docs/images/semseg.png"><img src = "docs/images/semseg.png" width="800px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i>Structure and method for semantic extraction</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-            <br><br>
-                <table align=center width=600px>
-                <tr>
-                    <td width=900px>
-                      <center>
-                          <a href="docs/images/fusion.png"><img src = "docs/images/fusion.png" width="900px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i> To fuse semantic information from multiple view, we introduced semantic fusion scheme.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-           
+            </table>          
             <br>
             <table align=center width=800>
                 
@@ -369,94 +320,50 @@ code {
 -->
             </table>
             <br><br>
+                    <table align=center width=600px>
+                <tr>
+                    <td width=900px>
+                      <center>
+                          <a href="docs/images/Semseg.png"><img src = "docs/images/Semseg.png" width="500px"></img></href></a><br>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
                 <table align=center width=900px>
                 <tr>
                     <td width=900px>
                       <center>
-                          <a href="docs/images/tpe.png"><img src = "docs/images/tpe.png" width="800px"></img></href></a><br>
-<!--
-                    <a href="./resources/gif/data1.gif"><img src = "./resources/gif/data1.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data2.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data11.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data15.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data14.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data13.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data18.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data21.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data4.gif" width="260px"></img></href></a>
--->
-                <!-- <video  width="440" muted autoplay loop>
-                <source src="resources/images/data_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                         <a href="./resources/images/Drone1.jpg"><img src = "./resources/images/Drone1.jpg" width="440px"></img></href></a> 
-                    <br>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/data_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/data_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video> -->
-
+                          <a href="docs/images/Bax.png"><img src = "docs/images/Bax.png" width="400px"></img></href></a>
+                          <a href="docs/images/Sig.png"><img src = "docs/images/Sig.png" width="440px"></img></href></a><br>
                     </center>
                     </td>
                 </tr>
                     <td width=900px>
                       <center>
-                          <span style="font-size:18px"><i> Comparison of trajectory for ORB-SLAM2, Our system and ground truth in X-Y and X-Z axis.</i>
+                          <span style="font-size:18px"><i> Flight trajectories recorded: the white trajectory represents Semantic-aware DWA, the green and red trajectories represent DWA.</i>
                     </center>
                     </td>
-                </tr> 
+                </tr>
             </table>
-
             <br><br>
-            <table align=center width=600px>
-            <tr>
-                <td width=900px>
-                  <center>
-                      <a href="docs/images/rpe.png"><img src = "docs/images/rpe.png" width="600px"></img></href></a><br>
-                </center>
-                </td>
-            </tr>
-                <td width=900px>
-                  <center>
-                      <span style="font-size:18px"><i> Comparison of Relative Rose Error (RPE) between ORB-SLAM2 and our system.</i>
-                </center>
-                </td>
-            </tr>
+                <table align=center width=900px>
+                <tr>
+                    <td width=900px>
+                      <center>
+                          <a href="docs/images/SegModel.png"><img src = "docs/images/SegModel.png" width="440px"></img></href></a>
+                          <a href="docs/images/FDis.png"><img src = "docs/images/FDis.png" width="440px"></img></href></a><br>
+                    </center>
+                    </td>
+                </tr>
+                    <td width=900px>
+                      <center>
+                          <span style="font-size:18px"><i> Quantitative comparison for flight performance (Flight Distance (F-D), Unreliable Distance (U-D) meter).</i>
+                    </center>
+                    </td>
+                </tr>
             </table>
-
-            <br><br>
-            <table align=center width=600px>
-            <tr>
-                <td width=900px>
-                  <center>
-                      <a href="docs/images/visual.png"><img src = "docs/images/visual.png" width="800px"></img></href></a><br>
-                </center>
-                </td>
-            </tr>
-                <td width=900px>
-                  <center>
-                      <span style="font-size:18px"><i> 3D visual representation of the obtained semantic maps.</i>
-                </center>
-                </td>
-            </tr>
-        </table>
             
-        <hr>
-         <center><h1>Code</h1></center>
-            <table align=center width=800px>
-              <tr><center> <br>
-                <span style="font-size:28px">&nbsp;<a href='https://github.com/thanhnguyencanh/S3M_SLAM'>[github]</a>
-
-                <span style="font-size:28px"></a></span>
-              <br>
-              </center></tr>
-          </table>
-            <br>
-          <hr>
 
          <center><h1>Citation</h1></center>
             <table align=center width=800px>
@@ -487,25 +394,25 @@ code {
               <br>
               </center></tr> -->
               <tr><left> <br>
-                          <span style="font-size:18px">1.  Canh T. N., Nguyen V-T, HoangVan X., Elibol A., Chong A.Y. <a href='https://thanhnguyencanh.github.io/S3M_SLAM/'>Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments</a>. Symposium on System Integration (SII), 2024.
+                          <span style="font-size:18px">1.  Canh T. N., Ngo H-H, HoangVan X., Chong A.Y. <a href='https://thanhnguyencanh.github.io/S3M_SLAM/'>Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments</a>. International Conference on Control, Automation, and Systems (ICCAS), 2024.
 
                           
               <br><br>
                               <code>@inproceedings{canh2024s3m, 
                                   <br>
-                                    author    = {Canh, Thanh Nguyen and Nguyen, Van-Truong and HoangVan, Xiem and Elibol, Armagan and Chong, Nak Young}, 
+                                    author    = {Canh, Thanh Nguyen and Ngo, Huy-Hoang and HoangVan, Xiem and Chong, Nak Young}, 
                                   <br>
                                     title     = {{Enhancing Social Robot Navigation with Integrated Motion Prediction and Trajectory Planning in Dynamic Human Environments}}, 
                                   <br>
-                                    booktitle = {2024 IEEE/SICE International Symposium on System Integration (SII)}, 
+                                    booktitle = {2024 24th International Conference on Control, Automation and Systems (ICCAS)}, 
                                   <br>
                                     year      = {2024}, 
                                   <br>
-                                    address   = {Vietnam}, 
+                                    pages     = {719--724},
                                   <br>
-                                    month     = {Jan}, 
+                                  organization= {IEEE}, 
                                   <br>
-                                    DOI       = {10.1109/SII58957.2024.10417379}
+                                    DOI       = {10.23919/ICCAS63016.2024.10773342}
                                   <br>
                                 } 
                               </code>
