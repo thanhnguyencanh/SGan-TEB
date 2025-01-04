@@ -69,4 +69,4 @@ rosrun sgan predict_tracks.py
 #Navigate robot in Rviz
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$(rospack find turtlebot3_navigation)/turtlebot3_house.yaml
 ```
->>>>>>> 6c140f4eddaeab477d5e4d6efcf26200d667b3f7
+>>>>>>> 
